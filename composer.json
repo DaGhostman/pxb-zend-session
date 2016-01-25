@@ -1,6 +1,7 @@
 {
   "name": "ddimitrov/pxb-zend-session",
   "description": "Zend Session module for PXB",
+  "license": "MIT",
   "extra": {
     "pxb-config": "\\PXB\\Module\\Zend\\Session\\SessionModuleConfig"
   },
