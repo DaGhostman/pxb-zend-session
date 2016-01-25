@@ -8,7 +8,6 @@
 
 namespace PXB\Module\Zend\Session;
 
-use Interop\Container\ContainerInterface;
 use Zend\Expressive\ConfigManager\PhpFileProvider as ConfigProvider;
 
 class SessionModuleConfig
@@ -23,7 +22,7 @@ class SessionModuleConfig
      *
      * @codeCoverageIgnore
      */
-    public function __invoke(ContainerInterface $container)
+    public function __invoke()
     {
         return new ConfigLoader('../config/{{,*.}global,{,*.}local}.php');
     }
