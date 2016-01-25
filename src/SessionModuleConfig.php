@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ddimitrov
- * Date: 24/01/16
- * Time: 14:21
- */
 
 namespace PXB\Module\Zend\Session;
 
@@ -17,7 +11,6 @@ class SessionModuleConfig
      * Returns a configuration container, that contains configurations
      * applicable to this module (templates, routes, dependencies, etc)
      *
-     * @param ContainerInterface $container
      * @return ConfigProvider
      *
      * @codeCoverageIgnore
