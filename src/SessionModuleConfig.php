@@ -17,6 +17,6 @@ class SessionModuleConfig
      */
     public function __invoke()
     {
-        return new ConfigLoader('../config/{{,*.}global,{,*.}local}.php');
+        return new ConfigProvider('../config/{{,*.}global,{,*.}local}.php');
     }
 }
