@@ -6,7 +6,6 @@ use Zend\Expressive\ConfigManager\PhpFileProvider as ConfigProvider;
 
 class SessionModuleConfig
 {
-
     /**
      * Returns a configuration container, that contains configurations
      * applicable to this module (templates, routes, dependencies, etc)
@@ -17,6 +16,6 @@ class SessionModuleConfig
      */
     public function __invoke()
     {
-        return new ConfigProvider('../config/{{,*.}global,{,*.}local}.php');
+        return new ConfigProvider(__DIR__ . '/../config/{{,*.}global,{,*.}local}.php');
     }
 }
